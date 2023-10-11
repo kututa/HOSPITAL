@@ -1,5 +1,4 @@
 /**
-* Template Name: Medicio
 * Updated: Sep 18 2023 with Bootstrap v5.3.2
 * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
 * Author: BootstrapMade.com
@@ -15,12 +14,13 @@ body {
 }
 
 a {
-  color: #3fbbc0;
+  color: rgb(0, 0, 139)
+  ;
   text-decoration: none;
 }
 
 a:hover {
-  color: #65c9cd;
+  color: rgb(0, 0, 139);
   text-decoration: none;
 }
 
@@ -80,7 +80,8 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #3fbbc0;
+  background: rgb(0, 0, 139)
+  ;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -116,8 +117,8 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #3fbbc0;
-  color: #fff;
+  background: rgb(0, 0, 139);
+  color: gold;
   height: 40px;
   font-size: 16px;
   font-weight: 600;
@@ -182,7 +183,7 @@ h6 {
 */
 .appointment-btn {
   margin-left: 25px;
-  background: #3fbbc0;
+  background: rgb(0, 0, 139);
   color: #fff;
   border-radius: 4px;
   padding: 8px 25px;
@@ -252,7 +253,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #3fbbc0;
+  color: blue;
 }
 
 .navbar .dropdown ul {
@@ -461,7 +462,7 @@ h6 {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 50px;
-  border-top: 4px solid #3fbbc0;
+  border-top: 4px solid blue;
 }
 
 @media (max-width: 1200px) {
@@ -475,7 +476,11 @@ h6 {
   color: #2f2f2f;
   margin-bottom: 20px;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 750;
+}
+#hero h2 .ent {
+  color: blue;
+  font-size: 45px;
 }
 
 #hero p {
@@ -516,7 +521,7 @@ h6 {
   line-height: 0;
   width: auto;
   height: auto;
-  background: rgba(63, 187, 192, 0.8);
+  background: blue;
   border-radius: 50px;
   transition: 0.3s;
   color: rgba(255, 255, 255, 0.5);
@@ -562,7 +567,7 @@ h6 {
   transition: 0.5s;
   line-height: 1;
   color: #fff;
-  background: #3fbbc0;
+  background: blue;
 }
 
 #hero .btn-get-started:hover {
@@ -631,7 +636,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #3fbbc0;
+  background: blue;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -709,7 +714,7 @@ section {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  background: #fff;
+  background: blue;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -774,7 +779,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #3fbbc0;
+  background: blue;
   color: #fff;
   background-size: cover;
   padding: 60px 0;
@@ -927,7 +932,7 @@ section {
   background: #fff;
   border-radius: 50%;
   transition: 0.5s;
-  color: #3fbbc0;
+  color: blue;
   overflow: hidden;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
 }
@@ -964,7 +969,7 @@ section {
   display: block;
   width: 50px;
   height: 2px;
-  background: #3fbbc0;
+  background: blue;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -1059,7 +1064,7 @@ section {
 }
 
 .appointment .php-email-form button[type=submit] {
-  background: #3fbbc0;
+  background: blue;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1091,6 +1096,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   transition: 0.3s;
+  color:blue;
 }
 
 .departments .nav-link p {
@@ -1233,7 +1239,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3fbbc0;
+  background-color: blue;
 }
 
 /*--------------------------------------------------------------
@@ -1339,7 +1345,7 @@ section {
 }
 
 .gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3fbbc0;
+  background-color: blue;
 }
 
 .gallery .swiper-slide-active {
@@ -1361,115 +1367,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #777777;
-  background: #f8f8f8;
-}
-
-.pricing h4 {
-  font-size: 36px;
-  color: #3fbbc0;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color: #3fbbc0;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.pricing .btn-buy {
-  background: #3fbbc0;
-  display: inline-block;
-  padding: 8px 35px 10px 35px;
-  border-radius: 4px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .btn-buy:hover {
-  background: #65c9cd;
-}
-
-.pricing .featured h3 {
-  color: #fff;
-  background: #3fbbc0;
-}
-
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #3fbbc0;
-  color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Frequently Asked Questioins
@@ -1548,10 +1445,10 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #3fbbc0;
+  color: blue;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #c5ebec;
+  border: 2px dotted #815ffc;
 }
 
 .contact .info-box h3 {
@@ -1609,7 +1506,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid blue;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1635,7 +1532,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #3fbbc0;
+  background: blue;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1694,7 +1591,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #3fbbc0;
+  background: blue;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1730,7 +1627,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #3fbbc0;
+  color: blue;
   font-size: 18px;
   line-height: 1;
 }
@@ -1780,7 +1677,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #3fbbc0;
+  background: blue;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
