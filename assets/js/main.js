@@ -270,4 +270,14 @@
    */
   new PureCounter();
 
+  const submitBtn= document.querySelector('.submitBtn')
+  submitBtn.addEventListener('click',appointmentDetails)
+  
+  function appointmentDetails(e){
+    e.preventDefault()
+    const option=  document.querySelector('#doctor').value
+    console.log(option)
+
+  }
+
 })()

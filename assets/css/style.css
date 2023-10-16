@@ -52,7 +52,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #3fbbc0;
+  border: 6px solid blue;
   border-top-color: #ecf8f9;
   border-radius: 50%;
   width: 60px;
@@ -829,7 +829,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #3fbbc0;
+  color: blue;
 }
 
 .about .content p:last-child {
@@ -852,7 +852,7 @@ section {
 .counts .count-box i {
   display: block;
   font-size: 30px;
-  color: #3fbbc0;
+  color: blue;
   float: left;
 }
 
@@ -1241,6 +1241,13 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: blue;
 }
+
+
+.testimonial-img{
+background-color: blue;
+height: 90px;
+}
+
 
 /*--------------------------------------------------------------
 # Doctors
