@@ -330,35 +330,38 @@
           <p>Your path to better health starts with a simple step – making an appointment with us. Reach out today to prioritize your well-being</p>
         </div>
 
-        <form action="" method="post" role="form" class="php-email-form form" data-aos="fade-up" data-aos-delay="100">
+        <form  role="form" class="php-email-form form" data-aos="fade-up" data-aos-delay="100">
           <div class="row">
             <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              <input type="text" name="name" class="form-control input" id="name" placeholder="Your Name" required>
+              <p>enter your full name, avoid using numbers or special characters</p>
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              <input type="email" class="form-control input" name="email" id="email" placeholder="Your Email" required>
+              <p> please enter a valid email e.g (example@example.com)</p>
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
+              <input type="text" class="form-control input" name="phone" id="phone" placeholder="Your Phone" required>
+              <p>Please enter a number starting with either 07 or 01</p>
             </div>
           </div>
           <div class="row">
             <div class="col-md-4 form-group mt-3">
-              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required>
+              <input type="date" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required>
             </div>
             <div class="col-md-4 form-group mt-3">
               <select name="department" id="department" class="form-select">
                 <option value="">Select Service</option>
-                <option value="Department 1">PURE TONE AUDIOMETRY (HEARING ASSESSMENT)</option>
-                <option value="Department 2">SPEACH AUDIOMETRY</option>
-                <option value="Department 3">OTO ACOUSTIC EMISSIONS (OAE)</option>
-                <option value="Department 3">HEAERING AID FITTING</option>
-                <option value="Department 3">TYMPANOMETRY</option>
-                <option value="Department 3">ACCOUSTIC REFLEXES</option>
-                <option value="Department 3">EUSTACHIAN TUBE FUNCTION TEST</option>
-                <option value="Department 3">TINNITUS MANAGEMENT</option>
-                <option value="Department 3">BERA (BRAIN EVOKED RESPONSE AUDIOMETRY)</option>
-                <option value="Department 3">VESTIBULAR ASSESSMENT</option>
+                <option value="PURE TONE AUDIOMETRY">PURE TONE AUDIOMETRY (HEARING ASSESSMENT)</option>
+                <option value="SPEECH AUDIOMETRY">SPEECH AUDIOMETRY</option>
+                <option value="OTO ACOUSTIC EMISSIONS">OTO ACOUSTIC EMISSIONS (OAE)</option>
+                <option value="HEARING AID FITTING">HEARING AID FITTING</option>
+                <option value="TYMPANOMETRY">TYMPANOMETRY</option>
+                <option value="ACCOUSTIC REFLEXES">ACCOUSTIC REFLEXES</option>
+                <option value="EUSTACHIAN TUBE FUNCTION TEST">EUSTACHIAN TUBE FUNCTION TEST</option>
+                <option value="TINNITUS MANAGEMENT">TINNITUS MANAGEMENT</option>
+                <option value="BRAIN EVOKED RESPONSE AUDIOMETRY">BERA (BRAIN EVOKED RESPONSE AUDIOMETRY)</option>
+                <option value="VESTIBULAR ASSESSMENT">VESTIBULAR ASSESSMENT</option>
 
 
 
@@ -375,14 +378,14 @@
           </div>
 
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+            <textarea class="form-control" name="message" id="message"  rows="5" placeholder="Message (Optional)" value =""></textarea>
           </div>
           <div class="my-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+            <div class="sent-message">div>
           </div>
-          <div class="text-center submitBtn"><button type="submit">Make an Appointment</button></div>
+          <div class="text-center submitBtn" id="submitbtn"><button type="submit">Make an Appointment</button></div>
         </form>
 
       </div>
@@ -628,27 +631,6 @@
             </div>
           </div> 
 
-          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Neurosurgeon</span>
-              </div>
-            </div>
-          </div> -->
-
-        <!-- </div> -->
-
-      <!-- </div> -->
     </section>
     
     <!-- End Doctors Section -->
@@ -778,7 +760,7 @@
       </div>
 
       <div>
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        <iframe style="border:0;width:100%;height:350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.142325051378!2d36.80829167101363!3d-1.3036642143472286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1185ebe5173f%3A0x48d8b5367310016c!2sFortis%20Suites%20UpperHill!5e0!3m2!1sen!2ske!4v1697638658725!5m2!1sen!2ske"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
       </div>
 
       <div class="container">
@@ -814,7 +796,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="#" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
@@ -830,9 +812,6 @@
                 <textarea class="form-control" name="message" rows="7" placeholder="Message" required=""></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>

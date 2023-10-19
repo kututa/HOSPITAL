@@ -988,10 +988,11 @@ section {
 
 .appointment .php-email-form .form-group {
   padding-bottom: 8px;
+  outline: none;
 }
 
 .appointment .php-email-form .validate {
-  display: none;
+  display: block;
   color: red;
   margin: 0 0 15px 0;
   font-weight: 400;
@@ -999,7 +1000,7 @@ section {
 }
 
 .appointment .php-email-form .error-message {
-  display: none;
+  display:none;
   color: #fff;
   background: #ed3c0d;
   text-align: left;
@@ -1047,8 +1048,32 @@ section {
   font-size: 14px;
   padding: 10px !important;
 }
+.appointment .php-email-form input + p {
+  font-size: 13px;
+  margin:2px 3px;
+  height:0;
+  opacity: 0;
+}
+.appointment .php-email-form input.valid {
+  border:2px solid #18d26e;
+  width:100%;
+  outline:none;
+  
+}
 
-.appointment .php-email-form input:focus,
+
+.appointment .php-email-form input.invalid
+{
+  border: 2px solid #ed3c0d;
+  width:100%;
+  outline: none;
+}
+.appointment .php-email-form input.invalid + p
+{
+color:#ed3c0d;
+height: auto;
+opacity: 1;
+}
 .appointment .php-email-form textarea:focus,
 .appointment .php-email-form select:focus {
   border-color: #3fbbc0;

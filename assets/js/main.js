@@ -270,14 +270,114 @@
    */
   new PureCounter();
 
-  const submitBtn= document.querySelector('.submitBtn')
-  submitBtn.addEventListener('click',appointmentDetails)
   
-  function appointmentDetails(e){
-    e.preventDefault()
-    const option=  document.querySelector('#doctor').value
-    console.log(option)
-
+ // validation pattern
+ const patterns = {
+  name:/[a-z]+$/i,
+  email:/^([a-z\d\.-]+)@([a-z\d]+)\.([a-z]{2,8})$/,
+  phone:/^\d{10}$/
+} 
+//function to check the validation and providing real time feedaback
+function validate(field,regex){
+  if(regex.test(field.value)){
+     field.className='valid'
+  }else {
+     field.className='invalid'
   }
+}
+const inputs = document.querySelectorAll('.input')
+inputs.forEach((input)=>{
+input.addEventListener('keyup',(e)=>{
+  validate(e.target,patterns[e.target.attributes.name.value])
+})
+})
+const formData = {
+  name:'',
+  email:'',
+  phone:'',
+  service:'',
+  doctor:'',
+  message:'',
+  date:''
 
+
+}
+// a button to handle submit
+let btnSubmit = document.getElementById('submitbtn')
+btnSubmit.addEventListener('click',handleSubmit)
+ async function handleSubmit(e){
+   
+  e.preventDefault()
+
+  let name = document.getElementById('name')
+  let email = document.getElementById('email')
+  let phoneNumber = document.getElementById('phone')
+  let service =  document.getElementById('department')
+  let doctorName = document.getElementById('doctor')
+  let AppointmentDate =document.getElementById('date')
+  let message =  document.getElementById('message')
+  // used to ensure all the values are valid
+   const isValid = name.className==='valid'&& 
+                   email.className === 'valid' && 
+                  phoneNumber.className ==='valid'
+    if (isValid){
+      formData.name = name.value
+      formData.email = email.value
+      formData.phone = phoneNumber.value
+      formData.service =service.value
+      formData.doctor = doctorName.value
+      formData.date = AppointmentDate.value
+      formData.message = message.value
+      displayElement('.loading','block')
+      try {
+        
+        const response = await fetch('http://127.0.0.1:5000/submit-form',{
+          method:'POST',
+          headers:{
+          'Content-Type':'application/json'
+          },
+          body:JSON.stringify(formData)
+        })
+        displayElement('.loading','none')
+         if(response.ok){
+          try {
+            let data = await response.json();
+            if (data) {
+              document.querySelector('.sent-message').textContent = data.message;
+              displayElement('.sent-message', 'block', 3000);
+        
+            }else {
+              console.log(response)
+            }
+          } catch (error) {
+            console.log('error passing json', error)
+          }
+         } else {
+          console.log(response.status)
+         }
+      }catch(error){
+
+        console.log(error.message)
+        displayElement('.loading','none')
+      }
+      
+    } 
+}
+
+
+
+
+  function displayElement(selector,displayValue,duration){
+    let element = document.querySelector(selector)
+    if (element){
+      element.style.display = displayValue
+      if(duration){
+        setTimeout(()=>{
+          element.style.display = 'none'
+        },duration)
+      }
+    }
+    
+  }
+ 
 })()
